@@ -70,7 +70,9 @@ public class App {
                 order.addProduct(Menu.PRODUCTS.get(selectedOption - 1));
             }
         }
-        orders.add(order);
+        if (order.getProductsCount() > 0) {
+            orders.add(order);
+        }
     }
 
     /**

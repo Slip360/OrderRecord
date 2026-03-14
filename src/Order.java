@@ -48,6 +48,15 @@ public class Order {
     }
 
     /**
+     * Get products count
+     * 
+     * @return Products count
+     */
+    public int getProductsCount() {
+        return this.products.size();
+    }
+
+    /**
      * Get order as string
      * 
      * @return Order as string
