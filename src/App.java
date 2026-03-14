@@ -57,7 +57,6 @@ public class App {
      * @param scanner Scanner object
      */
     private static void createOrder(Scanner scanner) {
-        clear();
         System.out.println("-------------------------------- Pedido No." + (orders.size() + 1)
                 + " --------------------------------");
         Order order = new Order();
@@ -78,7 +77,6 @@ public class App {
      * Show orders
      */
     private static void showOrders() {
-        clear();
         System.out.println("-------------------------------- Pedidos --------------------------------");
         for (Order order : orders) {
             System.out.println(order.getOrderAsString());
